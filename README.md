@@ -9,4 +9,7 @@ A feed-forward neural network and the DeepAR, N-BEATS, WaveNet, and Transformer 
 experiments/feature_functions.R and experiments/feature_experiments.R are programs that do feature computations for all series.
 utils/error_calculator.R calculates 5 error metrics to assess projections.
 In addition to the dataset used in the original repository, we introduce a new data set of vehicle trips downloaded from https://zenodo.org/communities/forecasting?page=1&size=20.This set of for-hire vehicle (FHV) firms' journeys and vehicle numbers are captured by 329 daily time series in this dataset. The first source of the dataset was fivethirtyeight.com/github/uber-tlc-foil-response. 
+Additionally, we implemented into practice the wrapper to do fixed horizon forecasting that was demonstrated in the paper to assess the seven local models, global pooled regression, and CatBoost models. The pipeline of model evaluation is connected, allowing for the execution of all local and global models using just two function calls.
+
+ To run please run all the cells given in a notebook. You can find notebook in experiments/MLP_final_project(1).ipynb this path.
 
